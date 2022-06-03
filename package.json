@@ -1,0 +1,26 @@
+{
+    "name": "poetic-walks",
+    "version": "0.0.0",
+    "description": "TypeScript rewrite of 6.005's Problem Set 2",
+    "main": "main.ts",
+    "prettier": "@ffTsuzuku/prettier-config",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ffTsuzuku/PoeticWalks.git"
+    },
+    "author": "ffTsuzuku",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ffTsuzuku/PoeticWalks/issues"
+    },
+    "homepage": "https://github.com/ffTsuzuku/PoeticWalks#readme",
+    "devDependencies": {
+        "@ffTsuzuku/eslint-config": "github:ffTsuzuku/configs#v2.0.2",
+        "@ffTsuzuku/prettier-config": "github:ffTsuzuku/ffTsuzuku_prettier#v1.0.3",
+        "@types/node": "^17.0.38",
+        "ts-node": "^10.8.0"
+    }
+}
