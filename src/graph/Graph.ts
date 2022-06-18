@@ -27,8 +27,7 @@ abstract class Graph<L> {
      * @return true if this graph did not already include a vertex with the
      *         given label; otherwise false (and this graph is not modified)
      */
-    abstract add<L>(vertex: L): boolean
-
+    abstract add(vertex: L): boolean
 
     /**
      * Add, change, or remove a weighted directed edge in this graph.
@@ -44,7 +43,7 @@ abstract class Graph<L> {
      * @return the previous weight of the edge, or zero if there was no such
      *         edge
      */
-    abstract set<L>(source: L, target: L, weight: number): number
+    abstract set(source: L, target: L, weight: number): number
 
     /**
      * Remove a vertex from this graph; any edges to or from the vertex are
@@ -54,15 +53,14 @@ abstract class Graph<L> {
      * @return true if this graph included a vertex with the given label;
      *         otherwise false (and this graph is not modified)
      */
-    abstract remove<L>(vertex: L): boolean
+    abstract remove(vertex: L): boolean
 
     /**
      * Get all the vertices in this graph.
      *
      * @return the set of labels of vertices in this graph
      */
-    abstract verticies<L>(): Set<L>
-
+    abstract verticies(): Set<L>
 
     /**
      * Get the source vertices with directed edges to a target vertex and the
@@ -74,7 +72,7 @@ abstract class Graph<L> {
      *         the value for each key is the (nonzero) weight of the edge from
      *         the key to target
      */
-    abstract sources<L>(target: L): Map<L, number>
+    abstract sources(target: L): Map<L, number>
 
     /**
      * Get the target vertices with directed edges from a source vertex and the
@@ -86,5 +84,7 @@ abstract class Graph<L> {
      *         the value for each key is the (nonzero) weight of the edge from
      *         source to the key
      */
-    abstract targets<L>(source: L): Map<L, number>
+    abstract targets(source: L): Map<L, number>
 }
+
+export default Graph

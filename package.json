@@ -20,7 +20,7 @@
     "devDependencies": {
         "@ffTsuzuku/eslint-config": "github:ffTsuzuku/configs#v2.0.2",
         "@ffTsuzuku/prettier-config": "github:ffTsuzuku/ffTsuzuku_prettier#v1.0.3",
-        "@types/node": "^17.0.38",
+        "@types/node": "^17.0.45",
         "ts-node": "^10.8.0"
     }
 }

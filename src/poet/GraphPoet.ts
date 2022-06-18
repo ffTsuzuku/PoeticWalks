@@ -1,3 +1,5 @@
+import Graph from '../graph/Graph'
+
 /**
  * A graph-based poetry generator.
  *
@@ -41,5 +43,38 @@
  * class is up to you.
  */
 class GraphPoet {
-    private
+    private static readonly graph = Graph.empty()
+
+    // Abstraction function:
+    //   TODO:
+    // Representation invariant:
+    //   TODO:
+    // Safety from rep exposure:
+    //   TODO:
+
+    /**
+     * Create a new poet with the graph from corpus (as described above).
+     *
+     * @param corpus text file from which to derive the poet's affinity graph
+     * @throws IOException if the corpus file cannot be found or read
+     */
+    constructor(corpus: Buffer) {
+        throw Error('Implement me!')
+    }
+
+    // TODO: checkRep
+
+    /**
+     * Generate a poem.
+     *
+     * @param input string from which to create the poem
+     * @return poem (as described above)
+     */
+    poem(input: string): string {
+        throw Error('Implement me')
+    }
+
+    // TODO: toString()
 }
+
+export default GraphPoet
